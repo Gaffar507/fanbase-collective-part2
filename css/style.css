@@ -266,7 +266,7 @@ ul {
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: 52px;
   color: var(--midnight-navy);
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
@@ -906,8 +906,9 @@ ul {
 .cta-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
-  flex: 1;
+  flex: 2;
 }
 
 /* Light Orange Circular Frame around Graph */
@@ -950,37 +951,23 @@ ul {
 
 /* Right Side Actions and Security */
 .cta-right {
-  flex: 5;
+  flex: 4;
   gap: 12px;
   flex-shrink: 0;
-}
-
-.cta-desc {
   display: flex;
-  gap: 25px;
+  flex-direction: column
 }
 
-.btn-arrow {
-  width: 16px;
-  height: 16px;
+.cta-right h2 {
+  font-size: 18px;
 }
-
-/* Security Meta Info Line */
-.secure-info {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: var(--text-muted);
-  font-size: 12px;
+.cta-right p {
+  font-size: 15px;
   font-weight: 500;
-  padding-left: 2px;
+  color: var(--text-muted-blue);
 }
 
-.lock-icon {
-  width: 13px;
-  height: 13px;
-  color: var(--text-muted);
-}
+
 
 /* CTA section style end */
 
@@ -1176,7 +1163,9 @@ ul {
   .logo img {
     width: 220px;
   }
-
+  .hero-content h1 {
+    font-size: 48px !important;
+  }
 }
 
 
@@ -1228,11 +1217,15 @@ ul {
   gap: 25px;
   padding-left: 40px;
 }
+  .hero-content h1 {
+    font-size: 42px !important;
+  }
 
   .formula-wrapper {
     flex-direction: column;
     gap: 16px;
   }
+  
   .card {
     width: 100%;
     max-width: 320px;
@@ -1244,27 +1237,6 @@ ul {
 
   .sections-container {
     flex-direction: column;
-  }
-    .cta-banner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 28px;
-    padding: 32px;
-  }
-  
-  .cta-desc {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-  .cta-right {
-    width: 100%;
-  }
-  
-  .cta-btn {
-    width: 100%;
-    justify-content: center;
   }
 
     .footer-top {
@@ -1340,10 +1312,12 @@ ul {
   .comparison-grid {
     flex-direction: column;
   }
-    .cta-left {
+
+  .cta-banner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 28px;
+    padding: 32px;
   }
 
     .footer-links-grid {
@@ -1359,4 +1333,38 @@ ul {
     flex-wrap: wrap;
     gap: 16px;
   }
+}
+
+@media (max-width: 470px) {
+
+.hero-tagline {
+  font-size: 20px;
+}
+
+.tagline-decoration {
+width: 220px;
+}
+
+.hero h1 {
+  font-size: 30px !important;
+  letter-spacing: -2px;
+}
+
+.hero-accent {
+  display: flex;
+  flex-direction: row;
+  padding-top: 14px;
+  letter-spacing: -2px;
+}
+
+.hero-description  {
+  max-width: 330px;
+  font-size: 12px !important;
+  font-weight: 550;
+}
+
+.hero-slowdown-btn {
+  width: 320px;
+}
+
 }
